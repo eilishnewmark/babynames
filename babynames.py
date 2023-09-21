@@ -2,9 +2,7 @@ import re
 from collections import defaultdict
 import itertools
 
-# r = re.compile(r"(\d+):([A-Z]'?[a-z]*'?-?[A-Z]?[a-z]*-?[A-Z]?[a-z]*)\ssex.([A-Z]+).,count.(\d+).")
 name_sex_count = re.compile(r"(\d+):(\S+) sex\(([A-Z]+)\),count\((\d+)\)")
-fname_pattern = re.compile(r".+namedata/scotbabies\d+.txt")
 
 class Babies:
     def __init__(self, year=None, sex=None):
